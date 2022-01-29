@@ -1,0 +1,16 @@
+#logo-navbar img{
+    width: 10vw;
+    height: 10vw;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    grid-template-areas: 
+    "large-preview"
+    "large-preview"
+    "descriptions"
+    "descriptions"
+    "cart-use";
+}

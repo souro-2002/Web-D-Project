@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" media="screen and (max-width : 1220px)" href="./phone1.css">
+</head>
+<body>
+    <header>
+        <div class="logo-navbar">
+            <img src="./ecommerce-product-page-main/images/logo.svg" alt="Image Not found">
+        </div>
+        <div class="logo-navbar">
+            <ul>
+                <li>Collections</li>
+                <li>Men</li>
+                <li>Women</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div id="cart">
+            <img src="./ecommerce-product-page-main/images/icon-cart.svg" alt="Image Not found">
+            <div id="dropdown">
+                <h3>Cart</h3><br>
+                <hr><br>
+                <span id="area">Your Cart is Empty</span>
+            </div>
+        </div>
+        <div id="avatar">
+            <img src="./ecommerce-product-page-main/images/image-avatar.png" alt="Image Not found">
+        </div>
+    </header>
+    <hr id="header-line">
+    <section>
+        <div id="large-preview">
+            <img src="./ecommerce-product-page-main/images/image-product-1.jpg" alt="Image Not Found">
+        </div>
+        <div id="collections">
+            <img src="./ecommerce-product-page-main/images/image-product-1-thumbnail.jpg" alt="Image Not Found">
+            <img src="./ecommerce-product-page-main/images/image-product-2-thumbnail.jpg" alt="Image Not Found">
+            <img src="./ecommerce-product-page-main/images/image-product-3-thumbnail.jpg" alt="Image Not Found">
+            <img src="./ecommerce-product-page-main/images/image-product-4-thumbnail.jpg" alt="Image Not Found">
+        </div>
+        <div id="descriptions">
+            <p style="color: hsl(25, 87%, 71%);font-weight: bold;" class="space">SNEAKER COMPANY</p>
+            <p id="heading" class="space">Fall Limited Edition Sneakers</p>
+            <p style="opacity: 0.7;" class="space">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+            <div>
+                <span id="price">$125.00</span>
+                <span id="discount">50%</span>
+            </div>
+            <p style="text-decoration: line-through;opacity: 0.5;" class="space">$250</p>
+        </div>
+        <div id="cart-use">
+            <span>
+                <img id="minus" class="items" src="./ecommerce-product-page-main/images/icon-minus.svg" alt="Image Not Found">
+                <span id="cart-count" class="items">0</span>
+                <img id="plus" class="items" src="./ecommerce-product-page-main/images/icon-plus.svg" alt="Image Not Found">
+            </span>
+            <button class="btn"><img src="./ecommerce-product-page-main/images/icon-cart - white.svg" alt="Image Not Found">Add to Cart</button>
+        </div>
+    </section>
+    <script src="./scripts.js"></script>
+</body>
+</html>
