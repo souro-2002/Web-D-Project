@@ -1,0 +1,79 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s ease-in-out;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+/* Background Image adding */
+body::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background: url("./breakout_bg.jpg") no-repeat center center/cover;
+    z-index: -1;
+}
+/* Login Box Styling */
+#login-box{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 35%;
+    height: 100%;
+    margin: auto;
+    padding: 2em;
+    position: relative;
+    top: 7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+#login-box img{
+    margin: 1em 0 2em 0;
+    width: 25vw;
+    height: 10vh;
+}
+#login-box input{
+    background-color: goldenrod;
+    font-weight: bold;
+    margin: 1.8em 0;
+    padding: 0.8em;
+    width: 50%;
+    border: 2px transparent;
+    border-radius: 10px;
+}
+#login-box input::placeholder{
+    color: black;
+    font-weight: bold;
+}
+#login-box button{
+    padding: 0.7em;
+    width: 9em;
+    margin: 1.8em 0;
+    background-color: goldenrod;
+    font-weight: bold;
+    border: 2px transparent;
+    border-radius: 10px;
+}
+#login-box button:hover{
+    background-color: rgb(241, 110, 110);
+    cursor: pointer;
+}
+#login-box input:hover{
+    background-color: rgb(241, 110, 110);
+    color: white;
+}
+/* Footer Undersign Styling */
+footer{
+    position: absolute;
+    bottom: 5%;
+    left: 45%;
+    color: white;
+    margin: 0 auto;
+}
+footer img{
+    margin: 0.5em 0 0 0.5em;
+    width: 3vw;
+    height: 6vh;
+}
