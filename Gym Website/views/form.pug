@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster's Registration</title>
+    style
+       include ./form_style.css
+</head>
+<body>
+    <div class="title">
+        <span>Become A Monster</span>
+        <form method="post" action="/form">
+            <input name="name" type="text" placeholder="Enter your name">
+            <input name="age" type="text" placeholder="Enter your age">
+            <input name="gender" type="text" placeholder="Enter your gender in full">
+            <input name="phone" type="number" placeholder="Enter your cell number">
+            <textarea name="address" id="address" cols="30" rows="10" placeholder="More about you"></textarea>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
