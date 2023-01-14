@@ -8,9 +8,11 @@ export default function Navbar() {
   const handleDark=()=>{
     if(!click){
       document.body.style.background="gray"
+      document.body.querySelector(".container textarea").style.border="4px solid black";
     }
     else{
       document.body.style.backgroundColor="white"
+      document.body.querySelector(".container textarea").style.border="4px solid black";
     }
     setclick(!click)
   }
@@ -20,7 +22,6 @@ export default function Navbar() {
             <img src={click?dark_logo:light_logo} alt="TextUtils"/>
             <ul className='nav__list'>
                 <li>Home</li>
-                <li>About Us</li>
             </ul>
             <img onClick={handleDark} src={click?light:dark} alt="Dark Mode" className={click?"mode__logo_sun":"mode__logo"}/>
         </nav>

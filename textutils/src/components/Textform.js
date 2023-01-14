@@ -41,7 +41,7 @@ export default function Textform() {
   return (
     <>
         <div className="container">
-            <h1 style={{textAlign:'center'}}>Enter your text here</h1>
+            <h1 style={{textAlign:'center',fontSize:'max(1.7rem,3vw)'}}>Enter your text here</h1>
             <textarea value={text} onChange={handleChange} name="words" cols="30" rows="10"></textarea>
             <div className="btns">
                 <button className="btn" onClick={handleUpper}>Convert to Uppercase</button>

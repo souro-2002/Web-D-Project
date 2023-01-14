@@ -14,7 +14,7 @@ nav{
     position: relative;
 }
 nav>img:first-child{
-    width: clamp(4rem,15%,30vw);
+    width: max(120px,20%); /* aspect-ratio: initial; */
 }
 nav>ul>li{
     list-style: none;
@@ -24,6 +24,7 @@ nav>ul>li{
     height: 100%;
     display: flex;
     align-items: center;
+    font-size: max(1rem,1.5vw);
     transition: color 200ms linear;
 }
 nav > ul{
@@ -37,7 +38,8 @@ nav>ul>li:hover{
 }
 .mode__logo{
     position: absolute;
-    inset: 0.5em 1.5em auto auto;
+    inset: 0.5em 0.5em auto auto;
+    width: max(50px,3%);
     cursor: pointer;
 }
 .container{
@@ -47,10 +49,10 @@ nav>ul>li:hover{
     margin-top: 1.5em;
 }
 .container > textarea{
-    font-size: 1rem;
+    font-size: max(1.6vw,1rem);
     font-family: sans-serif;
     padding: 0.5em;
-    width: 50%;
+    width: 80%;
     margin: 1em auto;
 }
 .btns{
@@ -83,8 +85,10 @@ nav>ul>li:hover{
 }
 .mode__logo_sun{
     position: absolute;
-    top: 0.05px;
-    right: 1em;
+    width: max(5%,60px);
+    aspect-ratio: 1/1;
+    top: 0rem;
+    right: 0.5em;
     cursor: pointer;
     filter: invert(1);
 }
