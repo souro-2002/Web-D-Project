@@ -1,0 +1,171 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-bg: #F2921D;
+  --timeline-color: #A61F69;
+  --arrow-color: white;
+}
+
+nav {
+  box-shadow: 0 0 3px 4px rgba(0, 0, 0, 0.507);
+  background-color: #F2CD5C;
+}
+
+.nav-item {
+  height: 100%;
+  font-weight: 400;
+  font-size: 1.3rem;
+  position: relative;
+  margin: 0 10%;
+  white-space: nowrap;
+}
+
+.nav-item:hover {
+  border-bottom: 3px solid rgba(0, 0, 0, 0.651);
+}
+
+.heading {
+  text-align: center;
+  padding: 1rem;
+}
+
+.container-fluid[id='main'] {
+  position: relative;
+  width: 70%;
+}
+
+.main-body {
+  background-color: var(--body-bg);
+  color: white;
+}
+
+.container-fluid[id='main']::after {
+  content: '';
+  position: absolute;
+  width: 0.5rem;
+  background-color: var(--timeline-color);
+  /* height: 100%; */
+  inset: 0 50% 0 auto;
+  animation: timeline 6s linear forwards;
+}
+
+.card {
+  position: relative;
+  width: 50%;
+  padding: 1rem;
+  color: black;
+}
+
+.left {
+  position: relative;
+  left: -10%;
+}
+
+.right {
+  position: relative;
+  left: 60%;
+}
+
+@keyframes timeline {
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 0;
+  }
+}
+
+.icon {
+  border-radius: 100%;
+  padding: 1%;
+  background-color: white;
+  z-index: 100;
+  position: absolute;
+  width: 13%;
+  cursor: pointer;
+  /* transition: border 200ms linear; */
+}
+
+.icon:hover {
+  box-shadow: 0 0 6px 6px #20262E;
+}
+
+.left .icon {
+  top: 50%;
+  right: -26%;
+}
+
+.right .icon {
+  top: 50%;
+  left: -28%;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+}
+
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid var(--arrow-color);
+  right: -0.8rem;
+
+}
+
+.arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid var(--arrow-color);
+  left: -0.8rem;
+}
+
+.card-body {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  font-size: max(3px, 1vw);
+  color: white !important;
+  inset: 0;
+  background: #2121229d;
+  z-index: 1000;
+  visibility: hidden;
+}
+
+@media (max-width:670px) {
+  .container-fluid[id='main']::after {
+    content: '';
+    position: absolute;
+    width: 0.5rem;
+    background-color: var(--timeline-color);
+    inset: 0 100% 0 auto;
+    animation: timeline 6s linear forwards;
+  }
+
+  .left {
+    left: 60%;
+  }
+
+  .arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid var(--arrow-color);
+    left: -0.8rem;
+  }
+}

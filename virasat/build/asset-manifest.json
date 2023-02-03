@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/my-app/static/css/main.97601e1d.css",
+    "main.js": "/my-app/static/js/main.08453e70.js",
+    "static/js/787.ba702be8.chunk.js": "/my-app/static/js/787.ba702be8.chunk.js",
+    "static/media/tabla.png": "/my-app/static/media/tabla.e8a59ccb9f4aa375442f.png",
+    "static/media/zakir_hussain.webp": "/my-app/static/media/zakir_hussain.6b6fb5c1d39a1462a161.webp",
+    "static/media/spicmacay_logo.png": "/my-app/static/media/spicmacay_logo.60fee4435e3d89459730.png",
+    "static/media/bismillah.jpg": "/my-app/static/media/bismillah.9f1d5f74ba35fc9d9f5c.jpg",
+    "static/media/ustad_ali_akbar.webp": "/my-app/static/media/ustad_ali_akbar.84e55e8b01cabc5bd00f.webp",
+    "static/media/ravi_shankar.webp": "/my-app/static/media/ravi_shankar.5ae4b4d3447d242485e8.webp",
+    "static/media/hariprasad.webp": "/my-app/static/media/hariprasad.1462597d5e2c121df3c9.webp",
+    "index.html": "/my-app/index.html",
+    "main.97601e1d.css.map": "/my-app/static/css/main.97601e1d.css.map",
+    "main.08453e70.js.map": "/my-app/static/js/main.08453e70.js.map",
+    "787.ba702be8.chunk.js.map": "/my-app/static/js/787.ba702be8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97601e1d.css",
+    "static/js/main.08453e70.js"
+  ]
+}
